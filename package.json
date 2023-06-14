@@ -1,0 +1,17 @@
+{
+  "name": "projetoagora",
+  "version": "1.0.0",
+  "description": "projeto-Agora",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Keila Martins",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.14.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}

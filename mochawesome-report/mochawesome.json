@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-06-13T19:28:23.076Z",
+    "end": "2023-06-13T19:30:18.178Z",
+    "duration": 115102,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e1473ffa-8bc1-4107-b202-5e385e59cdf5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\login.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ff80d92-bf37-44d7-9a5e-fbd90509f2a9",
+          "title": "Login de novo usuario Agora Brasil ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "\"clicar botao Entrar\" -force: true",
+              "fullTitle": "Login de novo usuario Agora Brasil  \"clicar botao Entrar\" -force: true",
+              "timedOut": null,
+              "duration": 77162,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Entrar\").should(\"be.visible\");\ncy.contains(\"a\", \"Entrar\").click({\n  force: true\n});\ncy.get(\"#Email\").type(\"maximestre@gamil.com\");\ncy.get(\"#Password\").type(\"Maxi20900 Martins\");\ncy.get(\".btn\").click();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login de novo usuario Agora...`",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Login de novo usuario Agora...`\n    at timedOutWaitingForPageLoad (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:146725:72)\n    at <unknown> (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:147699:16)\n    at tryCatcher (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://www.agorabrasil.org.br/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/1-getting-started/login.cy.js:3:9)",
+                "diff": null
+              },
+              "uuid": "d95ea1a0-7d22-46b9-ac87-e3c73f994c92",
+              "parentUUID": "3ff80d92-bf37-44d7-9a5e-fbd90509f2a9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d95ea1a0-7d22-46b9-ac87-e3c73f994c92"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 77162,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
